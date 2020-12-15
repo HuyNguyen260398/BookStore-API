@@ -8,9 +8,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace BookStore_API
@@ -33,6 +36,22 @@ namespace BookStore_API
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             //services.AddRazorPages();
+
+            services.AddSwaggerGen(c => 
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "Book Store API",
+                    Version = "v1",
+                    Description = "This is an educational API for a book store"
+                });
+
+                // Configure xml file name and path
+                var xfile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xpath = Path.Combine(AppContext.BaseDirectory, xfile);
+                c.IncludeXmlComments(xpath);
+            });
+
             services.AddControllers();
         }
 
@@ -50,6 +69,15 @@ namespace BookStore_API
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Book Store API");
+
+                // config the app to route the swagger page at start
+                c.RoutePrefix = "";
+            });
 
             app.UseHttpsRedirection();
             //app.UseStaticFiles();
