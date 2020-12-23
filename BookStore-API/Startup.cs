@@ -39,6 +39,14 @@ namespace BookStore_API
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             //services.AddRazorPages();
 
+            services.AddCors(o =>
+            {
+                o.AddPolicy("CorsPolicy", 
+                    builder => builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader());
+            });
+
             services.AddSwaggerGen(c => 
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
@@ -85,6 +93,8 @@ namespace BookStore_API
 
             app.UseHttpsRedirection();
             //app.UseStaticFiles();
+
+            app.UseCors("CorsPolicy");
 
             app.UseRouting();
 
