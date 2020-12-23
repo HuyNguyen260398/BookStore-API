@@ -12,10 +12,18 @@ namespace BookStore_API.Controllers
     [ApiController]
     public class HomeController : ControllerBase
     {
+        private readonly ILoggerService logger;
+
+        public HomeController(ILoggerService logger)
+        {
+            this.logger = logger;
+        }
+
         // GET: api/<HomeController>
         [HttpGet]
         public IEnumerable<string> Get()
         {
+            logger.LogInfo("Accessed Home Controller");
             return new string[] { "value1", "value2" };
         }
 
