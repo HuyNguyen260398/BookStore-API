@@ -1,4 +1,5 @@
-﻿using BookStore_API.Controllers;
+﻿using BookStore_API.Contracts;
+using BookStore_API.Controllers;
 using NLog;
 using System;
 using System.Collections.Generic;

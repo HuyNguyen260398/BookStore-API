@@ -1,4 +1,5 @@
 using AutoMapper;
+using BookStore_API.Contracts;
 using BookStore_API.Controllers;
 using BookStore_API.Data;
 using BookStore_API.Mappings;
@@ -67,6 +68,7 @@ namespace BookStore_API
             });
 
             services.AddSingleton<ILoggerService, LoggerService>();
+            services.AddScoped<IAuthorRepository, AuthorRepository>();
             
             services.AddControllers();
         }
