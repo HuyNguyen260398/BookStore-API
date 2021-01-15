@@ -1,0 +1,14 @@
+2021-01-15 15:12:10.7912 INFO Users - Login: Login Attempt from user: admin
+2021-01-15 15:12:11.0574 INFO Users - Login: admin Successfully Authenticated
+2021-01-15 15:17:29.9650 INFO Authors - GetAuthors: Attempted call
+2021-01-15 15:17:30.1120 INFO Authors - GetAuthors: Successful
+2021-01-15 15:19:04.4758 INFO Users - Login: Login Attempt from user: customer1
+2021-01-15 15:19:04.6399 INFO Users - Login: customer1 Successfully Authenticated
+2021-01-15 15:21:07.4216 INFO Users - Login: Login Attempt from user: admin
+2021-01-15 15:21:07.4554 INFO Users - Login: admin Successfully Authenticated
+2021-01-15 15:21:50.7458 INFO Authors - Create: Create attempted
+2021-01-15 15:21:50.9447 INFO Authors - Create: Creation was successful
+2021-01-15 15:31:52.7083 INFO Authors - GetAuthors: Attempted call
+2021-01-15 15:31:52.7375 INFO Authors - GetAuthors: Successful
+2021-01-15 15:32:21.9515 INFO Users - Login: Login Attempt from user: admin
+2021-01-15 15:32:21.9990 INFO Users - Login: admin Successfully Authenticated
