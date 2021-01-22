@@ -1,0 +1,42 @@
+2021-01-22 14:10:54.6585 INFO Users - Login: Login Attempt from user: test@gmail.com
+2021-01-22 14:10:54.8672 INFO Users - Login: test@gmail.com Successfully Authenticated
+2021-01-22 14:10:58.0632 INFO Authors - GetAuthors: Attempted call
+2021-01-22 14:10:58.1416 INFO Authors - GetAuthors: Successful
+2021-01-22 14:11:01.6308 INFO Authors - GetAuthor: Attempted to retrieve record with id: 3
+2021-01-22 14:11:01.6649 INFO Authors - GetAuthor: Successfully got record with id: 3
+2021-01-22 14:11:03.9071 INFO Authors - GetAuthors: Attempted call
+2021-01-22 14:11:03.9144 INFO Authors - GetAuthors: Successful
+2021-01-22 14:11:04.8631 INFO Authors - GetAuthor: Attempted to retrieve record with id: 4
+2021-01-22 14:11:04.8631 INFO Authors - GetAuthor: Successfully got record with id: 4
+2021-01-22 14:11:06.0318 INFO Authors - GetAuthors: Attempted call
+2021-01-22 14:11:06.0388 INFO Authors - GetAuthors: Successful
+2021-01-22 14:11:28.7206 INFO Users - Login: Login Attempt from user: admin@bookstore.com
+2021-01-22 14:11:28.7440 INFO Users - Login: admin@bookstore.com Not Authenticated
+2021-01-22 14:11:31.3458 INFO Users - Login: Login Attempt from user: admin@bookstore.com
+2021-01-22 14:11:31.3677 INFO Users - Login: admin@bookstore.com Not Authenticated
+2021-01-22 14:11:35.1545 INFO Users - Login: Login Attempt from user: admin@bookstore.com
+2021-01-22 14:11:35.1797 INFO Users - Login: admin@bookstore.com Not Authenticated
+2021-01-22 14:12:33.9452 INFO Users - Login: Login Attempt from user: admin@bookstore.com
+2021-01-22 14:12:33.9994 INFO Users - Login: admin@bookstore.com Successfully Authenticated
+2021-01-22 14:12:35.9938 INFO Authors - GetAuthors: Attempted call
+2021-01-22 14:12:36.0045 INFO Authors - GetAuthors: Successful
+2021-01-22 14:12:38.9737 INFO Authors - GetAuthor: Attempted to retrieve record with id: 3
+2021-01-22 14:12:38.9737 INFO Authors - GetAuthor: Successfully got record with id: 3
+2021-01-22 14:12:42.4156 INFO Authors - GetAuthors: Attempted call
+2021-01-22 14:12:42.4156 INFO Authors - GetAuthors: Successful
+2021-01-22 14:12:43.7884 INFO Authors - GetAuthor: Attempted to retrieve record with id: 4
+2021-01-22 14:12:43.7884 INFO Authors - GetAuthor: Successfully got record with id: 4
+2021-01-22 14:12:44.7058 INFO Authors - GetAuthors: Attempted call
+2021-01-22 14:12:44.7058 INFO Authors - GetAuthors: Successful
+2021-01-22 14:12:47.8981 INFO Authors - GetAuthor: Attempted to retrieve record with id: 3
+2021-01-22 14:12:47.8981 INFO Authors - GetAuthor: Successfully got record with id: 3
+2021-01-22 14:13:18.7363 INFO Users - Login: Login Attempt from user: test@gmail.com
+2021-01-22 14:13:18.7616 INFO Users - Login: test@gmail.com Not Authenticated
+2021-01-22 14:13:24.2112 INFO Users - Login: Login Attempt from user: test@gmail.com
+2021-01-22 14:13:24.2415 INFO Users - Login: test@gmail.com Successfully Authenticated
+2021-01-22 14:22:31.0632 INFO Users - Login: Login Attempt from user: test@gmail.com
+2021-01-22 14:22:31.3212 INFO Users - Login: test@gmail.com Successfully Authenticated
+2021-01-22 14:22:32.9112 INFO Authors - GetAuthors: Attempted call
+2021-01-22 14:22:33.0585 INFO Authors - GetAuthors: Successful
+2021-01-22 14:22:34.5221 INFO Authors - GetAuthor: Attempted to retrieve record with id: 3
+2021-01-22 14:22:34.5677 INFO Authors - GetAuthor: Successfully got record with id: 3

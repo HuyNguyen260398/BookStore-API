@@ -1,0 +1,94 @@
+2021-01-20 16:01:39.6072 INFO Users - Login: Login Attempt from user: test@gmail.com
+2021-01-20 16:01:39.8055 INFO Users - Login: test@gmail.com Successfully Authenticated
+2021-01-20 16:01:56.0564 INFO Authors - GetAuthors: Attempted call
+2021-01-20 16:01:56.1161 INFO Authors - GetAuthors: Successful
+2021-01-20 16:01:58.4160 INFO Authors - GetAuthor: Attempted to retrieve record with id: 3
+2021-01-20 16:01:58.4537 INFO Authors - GetAuthor: Successfully got record with id: 3
+2021-01-20 16:02:43.8442 INFO Authors - GetAuthors: Attempted call
+2021-01-20 16:02:43.8729 INFO Authors - GetAuthors: Successful
+2021-01-20 16:02:45.6051 INFO Authors - GetAuthor: Attempted to retrieve record with id: 3
+2021-01-20 16:02:45.6230 INFO Authors - GetAuthor: Successfully got record with id: 3
+2021-01-20 16:11:16.1039 INFO Users - Login: Login Attempt from user: admin@gmail.com
+2021-01-20 16:11:16.3339 INFO Users - Login: admin@gmail.com Successfully Authenticated
+2021-01-20 16:11:50.9893 INFO Authors - GetAuthors: Attempted call
+2021-01-20 16:11:51.0512 INFO Authors - GetAuthors: Successful
+2021-01-20 16:11:52.6192 INFO Authors - GetAuthor: Attempted to retrieve record with id: 3
+2021-01-20 16:11:52.6470 INFO Authors - GetAuthor: Successfully got record with id: 3
+2021-01-20 16:12:01.1207 INFO Authors - Update: Update attempted on record with id: 3
+2021-01-20 16:12:01.2935 INFO Authors - GetAuthors: Attempted call
+2021-01-20 16:12:01.2935 INFO Authors - GetAuthors: Successful
+2021-01-20 16:12:03.5523 INFO Authors - GetAuthor: Attempted to retrieve record with id: 3
+2021-01-20 16:12:03.5615 INFO Authors - GetAuthor: Successfully got record with id: 3
+2021-01-20 16:28:54.8845 INFO Users - Login: Login Attempt from user: admin@bookstore.com
+2021-01-20 16:28:55.0005 INFO Users - Login: admin@bookstore.com Not Authenticated
+2021-01-20 16:29:21.6106 INFO Users - Login: Login Attempt from user: admin@bookstore.com
+2021-01-20 16:29:21.7335 INFO Users - Login: admin@bookstore.com Successfully Authenticated
+2021-01-20 16:29:23.9502 INFO Authors - GetAuthors: Attempted call
+2021-01-20 16:29:24.0102 INFO Authors - GetAuthors: Successful
+2021-01-20 16:29:29.7303 INFO Authors - GetAuthor: Attempted to retrieve record with id: 1
+2021-01-20 16:29:29.7668 INFO Authors - GetAuthor: Successfully got record with id: 1
+2021-01-20 16:30:28.7133 INFO Users - Login: Login Attempt from user: admin@bookstore.com
+2021-01-20 16:30:28.9023 INFO Users - Login: admin@bookstore.com Successfully Authenticated
+2021-01-20 16:30:30.6371 INFO Authors - GetAuthors: Attempted call
+2021-01-20 16:30:30.6835 INFO Authors - GetAuthors: Successful
+2021-01-20 16:30:36.1424 INFO Authors - GetAuthor: Attempted to retrieve record with id: 3
+2021-01-20 16:30:36.1789 INFO Authors - GetAuthor: Successfully got record with id: 3
+2021-01-20 16:30:37.4077 INFO Authors - GetAuthors: Attempted call
+2021-01-20 16:30:37.4077 INFO Authors - GetAuthors: Successful
+2021-01-20 16:30:38.6790 INFO Authors - GetAuthor: Attempted to retrieve record with id: 1
+2021-01-20 16:30:38.6893 INFO Authors - GetAuthor: Successfully got record with id: 1
+2021-01-20 16:30:39.5366 INFO Authors - Delete: Delete attempted on record with id: 1
+2021-01-20 16:30:39.8611 ERROR Authors - Delete: An error occurred while updating the entries. See the inner exception for details. - Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Books_Authors". The conflict occurred in database "BookStore", table "dbo.Books", column 'AuthorId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:c73402fd-b56a-4239-b0cc-c41d5800c008
+Error Number:547,State:0,Class:16
+2021-01-20 16:46:52.9471 INFO Users - Login: Login Attempt from user: admin@bookstore.com
+2021-01-20 16:46:53.0004 INFO Users - Login: admin@bookstore.com Successfully Authenticated
+2021-01-20 16:46:54.1467 INFO Authors - GetAuthors: Attempted call
+2021-01-20 16:46:54.1574 INFO Authors - GetAuthors: Successful
+2021-01-20 16:46:56.9163 INFO Authors - GetAuthor: Attempted to retrieve record with id: 1
+2021-01-20 16:46:56.9163 INFO Authors - GetAuthor: Successfully got record with id: 1
+2021-01-20 16:46:58.4995 INFO Authors - Delete: Delete attempted on record with id: 1
+2021-01-20 16:46:58.6411 ERROR Authors - Delete: An error occurred while updating the entries. See the inner exception for details. - Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Books_Authors". The conflict occurred in database "BookStore", table "dbo.Books", column 'AuthorId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:9f259644-86ee-471f-8a05-e91abad3b622
+Error Number:547,State:0,Class:16
+2021-01-20 16:49:33.4808 INFO Authors - Delete: Delete attempted on record with id: 1
+2021-01-20 16:49:33.5235 INFO Authors - Delete: Record with id: 1  successfully deleted
+2021-01-20 16:49:38.4873 INFO Authors - GetAuthors: Attempted call
+2021-01-20 16:49:38.4955 INFO Authors - GetAuthors: Successful
+2021-01-20 17:08:47.3841 INFO Users - Login: Login Attempt from user: admin@bookstore.com
+2021-01-20 17:08:47.6008 INFO Users - Login: admin@bookstore.com Successfully Authenticated
+2021-01-20 17:08:50.6824 INFO Authors - GetAuthors: Attempted call
+2021-01-20 17:08:50.7474 INFO Authors - GetAuthors: Successful
+2021-01-20 17:14:30.3214 INFO Users - Login: Login Attempt from user: admin@bookstore.com
+2021-01-20 17:14:30.5233 INFO Users - Login: admin@bookstore.com Successfully Authenticated
+2021-01-20 17:14:31.7713 INFO Authors - GetAuthors: Attempted call
+2021-01-20 17:14:31.8205 INFO Authors - GetAuthors: Successful
+2021-01-20 17:14:48.2736 INFO Authors - Create: Create attempted
+2021-01-20 17:14:48.4342 INFO Authors - Create: Creation was successful
+2021-01-20 17:14:53.6230 INFO Authors - GetAuthors: Attempted call
+2021-01-20 17:14:53.6230 INFO Authors - GetAuthors: Successful

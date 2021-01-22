@@ -1,0 +1,33 @@
+2021-01-19 15:53:08.8848 INFO Users - Register: Registration Attempt for user: test@gmail.com
+2021-01-19 15:54:45.7269 INFO Users - Login: Login Attempt from user: test@gmail
+2021-01-19 15:54:45.7524 INFO Users - Login: test@gmail Not Authenticated
+2021-01-19 15:54:52.9065 INFO Users - Login: Login Attempt from user: test@gmail.com
+2021-01-19 15:54:53.0265 INFO Users - Login: test@gmail.com Successfully Authenticated
+2021-01-19 16:16:02.5570 INFO Users - Login: Login Attempt from user: test@gmail.com
+2021-01-19 16:16:02.7516 INFO Users - Login: test@gmail.com Successfully Authenticated
+2021-01-19 16:16:21.1810 INFO Authors - GetAuthors: Attempted call
+2021-01-19 16:16:21.2379 INFO Authors - GetAuthors: Successful
+2021-01-19 17:08:49.1186 INFO Users - Login: Login Attempt from user: test@gmail.com
+2021-01-19 17:08:49.3250 INFO Users - Login: test@gmail.com Successfully Authenticated
+2021-01-19 17:08:53.8163 INFO Authors - GetAuthors: Attempted call
+2021-01-19 17:08:53.8731 INFO Authors - GetAuthors: Successful
+2021-01-19 17:08:55.9934 INFO Authors - GetAuthor: Attempted to retrieve record with id: 1
+2021-01-19 17:08:56.0171 INFO Authors - GetAuthor: Successfully got record with id: 1
+2021-01-19 17:09:01.3984 INFO Authors - GetAuthors: Attempted call
+2021-01-19 17:09:01.4056 INFO Authors - GetAuthors: Successful
+2021-01-19 17:09:02.6985 INFO Authors - GetAuthor: Attempted to retrieve record with id: 3
+2021-01-19 17:09:02.6985 INFO Authors - GetAuthor: Successfully got record with id: 3
+2021-01-19 17:09:03.9898 INFO Authors - GetAuthors: Attempted call
+2021-01-19 17:09:03.9949 INFO Authors - GetAuthors: Successful
+2021-01-19 17:09:51.7306 INFO Authors - GetAuthor: Attempted to retrieve record with id: 1
+2021-01-19 17:09:51.7743 INFO Authors - GetAuthor: Successfully got record with id: 1
+2021-01-19 17:09:53.7735 INFO Authors - GetAuthors: Attempted call
+2021-01-19 17:09:53.7833 INFO Authors - GetAuthors: Successful
+2021-01-19 17:09:55.1506 INFO Authors - GetAuthor: Attempted to retrieve record with id: 3
+2021-01-19 17:09:55.1506 INFO Authors - GetAuthor: Successfully got record with id: 3
+2021-01-19 17:09:57.3435 INFO Authors - GetAuthors: Attempted call
+2021-01-19 17:09:57.3549 INFO Authors - GetAuthors: Successful
+2021-01-19 17:13:30.2793 INFO Authors - GetAuthor: Attempted to retrieve record with id: 3
+2021-01-19 17:13:30.2793 INFO Authors - GetAuthor: Successfully got record with id: 3
+2021-01-19 17:13:31.0009 INFO Authors - GetAuthors: Attempted call
+2021-01-19 17:13:31.0307 INFO Authors - GetAuthors: Successful
