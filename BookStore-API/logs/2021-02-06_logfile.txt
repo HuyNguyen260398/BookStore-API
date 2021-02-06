@@ -1,0 +1,64 @@
+2021-02-06 20:33:27.8113 INFO Users - Login: Login Attempt from user: admin@bookstore.com
+2021-02-06 20:33:28.0446 INFO Users - Login: admin@bookstore.com Successfully Authenticated
+2021-02-06 20:33:52.7544 INFO Authors - GetAuthors: Attempted call
+2021-02-06 20:33:52.9727 ERROR Authors - GetAuthors: Invalid column name 'File'. - 
+2021-02-06 20:36:56.3772 INFO Books - GetBooks: Attempted Call
+2021-02-06 20:36:56.5052 ERROR Books - GetBooks: Invalid column name 'File'. - 
+2021-02-06 20:38:15.0319 INFO Books - GetBooks: Attempted Call
+2021-02-06 20:38:15.1151 INFO Books - GetBooks: Successful
+2021-02-06 20:38:33.1884 INFO Books - GetBooks: Attempted Call
+2021-02-06 20:38:33.2079 INFO Books - GetBooks: Successful
+2021-02-06 20:39:31.4846 INFO Users - Login: Login Attempt from user: admin@bookstore.com
+2021-02-06 20:39:31.6879 INFO Users - Login: admin@bookstore.com Successfully Authenticated
+2021-02-06 20:39:40.6068 INFO Authors - GetAuthors: Attempted call
+2021-02-06 20:39:40.7483 INFO Authors - GetAuthors: Successful
+2021-02-06 20:39:41.6807 INFO Books - GetBooks: Attempted Call
+2021-02-06 20:39:41.7254 INFO Books - GetBooks: Successful
+2021-02-06 20:41:20.4778 INFO Authors - GetAuthors: Attempted call
+2021-02-06 20:41:20.4938 INFO Authors - GetAuthors: Successful
+2021-02-06 20:42:34.3485 INFO Books - Create: Create attempted
+2021-02-06 20:42:34.6644 INFO Books - Create: Creation was successful
+2021-02-06 20:42:34.7718 INFO Books - GetBooks: Attempted Call
+2021-02-06 20:42:34.8053 INFO Books - GetBooks: Successful
+2021-02-06 20:56:52.0296 INFO Users - Login: Login Attempt from user: admin@bookstore.com
+2021-02-06 20:56:52.2766 INFO Users - Login: admin@bookstore.com Successfully Authenticated
+2021-02-06 20:56:55.1423 INFO Books - GetBooks: Attempted Call
+2021-02-06 20:56:55.3233 INFO Books - GetBooks: Successful
+2021-02-06 20:56:57.9270 INFO Books - GetBook: Attempted call for id: 4
+2021-02-06 20:56:57.9677 INFO Books - GetBook: Successfully got record with id: 4
+2021-02-06 20:57:08.1123 INFO Books - GetBooks: Attempted Call
+2021-02-06 20:57:08.1373 INFO Books - GetBooks: Successful
+2021-02-06 21:24:13.3122 INFO Users - Login: Login Attempt from user: admin@bookstore.com
+2021-02-06 21:24:13.5424 INFO Users - Login: admin@bookstore.com Successfully Authenticated
+2021-02-06 21:24:18.8603 INFO Books - GetBooks: Attempted Call
+2021-02-06 21:24:18.9928 INFO Books - GetBooks: Successful
+2021-02-06 21:24:23.0262 INFO Books - GetBook: Attempted call for id: 2
+2021-02-06 21:24:23.0583 INFO Books - GetBook: Successfully got record with id: 2
+2021-02-06 21:24:23.0940 INFO Authors - GetAuthors: Attempted call
+2021-02-06 21:24:23.1607 INFO Authors - GetAuthors: Successful
+2021-02-06 21:24:54.7838 INFO Books - Update: Update attempted on record with id: 2
+2021-02-06 21:24:54.9938 INFO Books - Update: Record with id: 2  successfully updated
+2021-02-06 21:24:55.0775 INFO Books - GetBooks: Attempted Call
+2021-02-06 21:24:55.6082 INFO Books - GetBooks: Successful
+2021-02-06 21:24:59.1615 INFO Books - GetBook: Attempted call for id: 2
+2021-02-06 21:24:59.4283 INFO Books - GetBook: Successfully got record with id: 2
+2021-02-06 21:25:00.1168 INFO Authors - GetAuthors: Attempted call
+2021-02-06 21:25:00.4019 INFO Authors - GetAuthors: Successful
+2021-02-06 21:25:01.2918 INFO Books - GetBooks: Attempted Call
+2021-02-06 21:25:01.5558 INFO Books - GetBooks: Successful
+2021-02-06 21:25:03.6950 INFO Books - GetBook: Attempted call for id: 2
+2021-02-06 21:25:03.9438 INFO Books - GetBook: Successfully got record with id: 2
+2021-02-06 21:25:07.8141 INFO Books - GetBooks: Attempted Call
+2021-02-06 21:25:08.0852 INFO Books - GetBooks: Successful
+2021-02-06 21:25:10.2201 INFO Books - GetBook: Attempted call for id: 4
+2021-02-06 21:25:10.2433 INFO Books - GetBook: Successfully got record with id: 4
+2021-02-06 21:25:12.5871 INFO Books - GetBooks: Attempted Call
+2021-02-06 21:25:12.8625 INFO Books - GetBooks: Successful
+2021-02-06 21:25:35.3132 INFO Books - GetBook: Attempted call for id: 2
+2021-02-06 21:25:35.6494 INFO Books - GetBook: Successfully got record with id: 2
+2021-02-06 21:25:37.8925 INFO Authors - GetAuthor: Attempted to retrieve record with id: 2
+2021-02-06 21:25:38.2088 INFO Authors - GetAuthor: Successfully got record with id: 2
+2021-02-06 21:25:44.0071 INFO Books - GetBook: Attempted call for id: 2
+2021-02-06 21:25:44.3456 INFO Books - GetBook: Successfully got record with id: 2
+2021-02-06 21:25:45.0871 INFO Books - GetBooks: Attempted Call
+2021-02-06 21:25:45.3989 INFO Books - GetBooks: Successful
