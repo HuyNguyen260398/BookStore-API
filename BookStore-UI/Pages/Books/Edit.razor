@@ -6,6 +6,7 @@
 @inject IAuthorRepository _authorRepo
 @inject IFileUpload _fileUpload
 @inject NavigationManager _navManager
+@inject IToastService _toastServices
 
 <h3>Edit Book</h3>
 <br />
@@ -86,12 +87,12 @@ else
 
     private Book Model = new Book();
     private IList<Author> Authors;
-    private IFileListEntry file;
+    private IBrowserFile file;
     private string imageDataURL;
     private bool isSuccess = true;
     private bool isInvalidFileType = false;
     private bool isFileChanged = false;
-    private MemoryStream msFile;
+    private Stream msFile;
 
     protected override async Task OnInitializedAsync()
     {
@@ -114,7 +115,7 @@ else
                 _fileUpload.RemoveFile(Model.Image);
 
                 // Add new image
-                _fileUpload.UploadFile(file, msFile, picName);
+                await _fileUpload.UploadFile(msFile, picName);
                 Model.Image = picName;
             }
             else if (isFileChanged && file == null)
@@ -127,25 +128,29 @@ else
             isSuccess = await _repo.Update(Endpoints.BooksEnpoint, Model, Model.Id);
             if (isSuccess)
             {
+                _toastServices.ShowSuccess("Book updated", "Success");
                 BackToList();
             }
         }
     }
 
-    private async Task HandleFileSelection(IFileListEntry[] files)
+    private async Task HandleFileSelection(InputFileChangeEventArgs e)
     {
-        file = files.FirstOrDefault();
+        file = e.File;
         isFileChanged = true;
         if (file != null)
         {
-            var name = file.Name;
-            if (name.Contains("jpg") || name.Contains("png") || name.Contains("jpeg"))
+            var ext = Path.GetExtension(file.Name);
+            if (ext.Contains("jpg") || ext.Contains("png") || ext.Contains("jpeg"))
             {
-                msFile = new MemoryStream();
-                await file.Data.CopyToAsync(msFile);
+                msFile = file.OpenReadStream();
 
-                var reader = new StreamReader(file.Data);
-                var imageBase64Data = Convert.ToBase64String(msFile.ToArray());
+                var resizedImageFile = await file.RequestImageFileAsync("image/png", 100, 100);
+
+                var buffer = new byte[resizedImageFile.Size];
+                await resizedImageFile.OpenReadStream().ReadAsync(buffer);
+
+                var imageBase64Data = Convert.ToBase64String(buffer);
                 imageDataURL = string.Format("data:image/png;base64,{0}", imageBase64Data);
                 isInvalidFileType = false;
             }
@@ -157,7 +162,7 @@ else
         }
         else
         {
-            isInvalidFileType = true;
+            isInvalidFileType = false;
         }
     }
 

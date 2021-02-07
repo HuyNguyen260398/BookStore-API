@@ -2,6 +2,7 @@
 @attribute [Authorize(Roles = "Administrator")]
 @inject IAuthorRepository _repo
 @inject NavigationManager _navManager
+@inject IToastService _toastServices
 
 <h3 class="card-title">Edit Author</h3>
 
@@ -66,6 +67,7 @@ else
         bool isSuccess = await _repo.Update(Endpoints.AuthorsEnpoint, Model, Model.Id);
         if (isSuccess)
         {
+            _toastServices.ShowSuccess("Author updated", "Success");
             BackToList();
         }
         else

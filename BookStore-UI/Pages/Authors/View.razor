@@ -2,6 +2,7 @@
 
 @inject IAuthorRepository _repo
 @inject NavigationManager _navManager
+@inject IToastService _toastServices
 
 <h3>View Author Details</h3>
 
@@ -76,6 +77,7 @@ else
     {
         int id = int.Parse(Id);
         Model = await _repo.Get(Endpoints.AuthorsEnpoint, id);
+        _toastServices.ShowSuccess($"Now viewing {Model.Firstname} {Model.Lastname}", "Author details");
     }
 
     private void GoToEdit()
